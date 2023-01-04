@@ -3,6 +3,11 @@ h1 {
 }
 /* Write your selector for .left below */
 
+.rubberduck {
+    Float:left;
+    
+}
+
 /* Write your selector for .right below */
 
 /* Write your selector for .separator below */
