@@ -8,7 +8,7 @@
 .flexContainer {
   display: flex;
   height: 400px;
-  background-color: lightblue;
+  background-color: yellowgreen;
   margin: 10px;
   padding: 10px;
 }
@@ -31,9 +31,10 @@ It is highly recommended to try out these commands in chromes web inspector to s
   - flex-end
   - flex-start
   */
-
+ align-items: flex-start;
 }
 .justifyContent {
+  justify-content: space-evenly;
 /*
 - under this comment type out the css property justify-content.
 - Try out the following properties of justify-Content
@@ -47,6 +48,8 @@ It is highly recommended to try out these commands in chromes web inspector to s
 
 }
 .perfectlyCentered {
+  justify-content: center;
+  align-items: center;
 /*
 - Under this comment type out the css property of justify-content: center;
 - Then type out the css property align-items: center;

@@ -1,5 +1,13 @@
-/* Navigation styles */
-
+.nav{
+    display: flex
+}
+.logo {
+    background: whitesmoke;
+    height: 230 px;
+    background: url("Images/jakes-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /* Column styles */
 
 /* Footer Styles */
