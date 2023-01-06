@@ -5,3 +5,11 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+
+.navbar{
+	background: yellowgreen;
+}
+
+.menu-list li a{
+	color: #fff;
+}
