@@ -55,7 +55,7 @@
 }
 .banner{
   height:100vh;
-  background: url("banner.jpg")no-repeat;
+  background: url("collage.png")no-repeat;
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
