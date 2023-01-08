@@ -60,6 +60,13 @@
   background-position:center;
   background-attachment:fixed;
 }
+.bannerAbout{
+  height:100vh;
+  background: pink;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
 .about{
   padding:40px 0; 
 }
