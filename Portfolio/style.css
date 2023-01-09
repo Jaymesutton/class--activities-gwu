@@ -60,6 +60,7 @@
     background-size:cover;
     position:relative;
 }
+
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
@@ -76,11 +77,6 @@
     color: black;
 }
 
-/* about section */
-
-.education{
-  padding:40px 0; 
-}
 .education .title{
   font-size:35px;
   font-weight: 700;

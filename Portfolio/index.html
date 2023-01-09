@@ -176,10 +176,23 @@ list-style:none;
   <div>Information Architecture</div>
   <div>IT Project Management</div>  
 </div>
-  
-		
+  		
     </section>
 	
+<!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script>
     const body = document.querySelector("body"); 
       
@@ -199,22 +212,12 @@ list-style:none;
       
       window.onscroll = ()=>{
         this.scrolly > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");        
-      }                   
-    </script>
-<!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
+      } 
+        <!-- load javascript after loading all html content -->
+         <script src="script/script.js"></script>           
+   </script>
+
+  </body>
 </html>
 
 
