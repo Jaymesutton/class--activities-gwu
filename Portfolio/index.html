@@ -199,7 +199,8 @@ list-style:none;
     const menu = document.querySelector(".menu-list");
     const menuBtn = document.querySelector(".menu-btn"); 
     const cancelBtn = document.querySelector(".cancel-btn");
-      menuBtn.onclick = ()=>{
+
+        menuBtn.onclick = ()=>{
         menu.classList.add("active");
         menuBtn.classList.add("hide");
         body.classList.add("disabledScroll");
@@ -213,8 +214,7 @@ list-style:none;
       window.onscroll = ()=>{
         this.scrolly > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");        
       } 
-        <!-- load javascript after loading all html content -->
-         <script src="script/script.js"></script>           
+      
    </script>
 
   </body>
