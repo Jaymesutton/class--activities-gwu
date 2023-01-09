@@ -5,10 +5,89 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jayme Sutton Portfolio</title>
 	<link rel="stylesheet" href="style.css">
+	<!-- font awesome -->
+  	<script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <style>
+* {
+  box-sizing: border-box;
+}
+h3{
+text-align:center;
+font-size: 30px;
+padding:70px;
+}
+.flex-container-education {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: left;
+}
+.flex-item-left-top {
+  background-color: none;
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-left-top ul{
+list-style:none;
+}
+
+.flex-item-right-top {
+  background-color: none;
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right-top ul{
+list-style:none;
+}
+
+.flex-item-left-bottom{
+  background-color: none;
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-left-bottom ul{
+list-style:none;
+}
+.flex-item-right-bottom {
+  background-color: none;
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right-bottom ul{
+list-style:none;
+}
+.flex-container-services {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: left;
+}
+.flex-container-services > div {
+  background-color: #f1f1f1;
+  width: 450px;
+  height: 300px;
+  margin: 38px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container-education {
+    flex-direction: column;
+  }
+.flex-container-services {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 
 <body>
+      <!-- navigation section-->
+     <header>
 	<nav class="navbar">
 		<div class="content">
 			<div class="logo"><a href="#">Jayme Sutton</a></div>
@@ -19,7 +98,7 @@
          </div>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
-			<li><a href="#">Work</a></li>
+			<li><a href="#">Projects</a></li>
 			<li><a href="#">Resume</a></li>
 			<li><a href="#">Contact</a></li>
          <div class="icon menu-btn">
@@ -28,20 +107,82 @@
 		 </ul>
 		</div> 
 	</nav>
-	<section class="bgimage" id="home">
+       </header>
+
+<!-- hero section-->
+       <section>
+	<div class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hi, it's me Brad</h2>
-                <p class="hero_desc">I am a professional freelancer in New York City</p>
+                <h2 class="hero_title">Hello, I'm Jayme</h2>
+                <p class="hero_desc">I am a UX Designer in the greater Washington DC area</p>
             </div>
             </div>
         </div>
-    </section>
+    </div>
+	</section>
 
+<!-- education section-->
+	 <section id="education">
+        <div class="container mt-4 pt-4">
+            <h3>Education</h3>
+  <div class="flex-container-education">
+  <div class="flex-item-left-top">
+    <ul>
+       <li><b>UX/UI Developer</b></li>
+       <li>George Washington University-Washington DC</li>
+       <li>August 2022 to February 2023</li>
+    </ul>   
+  </div>
+  <div class="flex-item-right-top">
+  <ul>
+       <li><b>M.B.A. Business Administration</b></li>
+       <li>University of Maryland-Adelphi</li>
+       <li>January 2022 to current</li>
+    </ul>   
+    </div>
+  <div class="flex-item-left-bottom">
+  <ul>
+       <li><b>B.S. Information Systems Management</b></li>
+       <li>University of Maryland-Adelphi</li>
+       <li>August 2019 to December 2021</li>
+    </ul>   
+    </div>
+  <div class="flex-item-right-bottom">
+  <ul>
+       <li><b>A.S. Information Technology</b></li>
+       <li>Northern Virginia Community College</li>
+       <li>September 2016 to May 2018</li>
+    </ul>   
+  
+  </div>
+  
+</div>
+    </section>
+	
+	<!-- services section-->
+    <section id="services">
+         <h3>Services</h3>
+        
+<div class="flex-container-services">
+  <div>UX Design</div>
+  <div>UI Concept Creation</div>
+  <div>Mobile App UI Developement</div>  
+</div>
+  
+<div class="flex-container-services">
+  <div>Healthcare Informatics</div>
+  <div>Information Architecture</div>
+  <div>IT Project Management</div>  
+</div>
+  
+		
+    </section>
+	
     <script>
     const body = document.querySelector("body"); 
-    const navbar = document.querySelector(".navbar");  
+      
     const menu = document.querySelector(".menu-list");
     const menuBtn = document.querySelector(".menu-btn"); 
     const cancelBtn = document.querySelector(".cancel-btn");
@@ -60,6 +201,19 @@
         this.scrolly > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");        
       }                   
     </script>
+<!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
