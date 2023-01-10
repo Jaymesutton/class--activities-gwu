@@ -6,7 +6,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  "rotate"
+  
+  
   "scale"
   "translate"
   ;
@@ -17,6 +18,7 @@ body {
 }
 .rotate img {
 /* Write your rotate transform here */
+transform: rotate(360deg);
 }
 .scale {
   grid-area: scale;
@@ -30,6 +32,7 @@ body {
   background-color: red;
   margin: 0 auto;
   /* Write the scale transform here */
+  transform: scale(2);
 
 }
 .translate {
