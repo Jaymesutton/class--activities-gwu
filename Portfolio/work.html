@@ -6,6 +6,33 @@
 	<title>Jayme Sutton Portfolio</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<style>
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+	padding:100px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+</style>
 </head>
 
 <body>
@@ -29,13 +56,22 @@
 		</div> 
 	</nav>
 
-<div class="banner"></div>
-	<div class="about">
-	<div class="content">
-		<div class="title">Jayme Sutton</div>
-		<p>While CMS has previously focused on Medicare and Medicaid directories, the No Surprises Act is a federal law that extends directory accuracy requirements to commercial plans. The Act also recognizes that ensuring directories are accurate is a shared responsibility of both plans and providers. These regulations:</p>
-		<p>some more text</p>
-	</div>
+<!-- The flexible grid (content) -->
+<div class="row">
+    <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
     <script>
     const body = document.querySelector("body"); 
     const navbar = document.querySelector(".navbar");  
