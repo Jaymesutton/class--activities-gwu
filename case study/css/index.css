@@ -1,4 +1,25 @@
 .customNav{
-    background-color: pink;
+    background-color: antiquewhite;
+    padding: 30px;
+}
+
+
+
+
+
+.contentSection{
     padding: 100px;
+}
+.heading{
+    color:aqua;
+    padding: 40px;
+}
+.sectionHeading{
+    color: blue;
+    text-align:center;
+    padding: 50px;
+    font-weight:400;
+}
+.timeline{
+    width:100%;
 }
